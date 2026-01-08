@@ -26,7 +26,7 @@ This document outlines the configuration strategies available in Microsoft Intun
 10. Wireless Security Type: **WPA/WPA2-Personal**.
 11. Pre-shared key (PSK): **Enter the Wi-Fi password here**.
 12. **Assignment:** Assign to a **Device Group**.
-    *   *Note: Assigning to a Device Group ensures the device connects to the Wi-Fi network at the login screen, before a user logs in.*
+*Note: Assigning to a Device Group ensures the device connects to the Wi-Fi network at the login screen, before a user logs in.*
 
 ---
 
@@ -46,12 +46,12 @@ This document outlines the configuration strategies available in Microsoft Intun
     hide:network-wifi;network-status
     ```
 9.  **Assignment:** Assign to a **User Group**.
-    *   *Note: Assigning to a User Group blocks regular users from seeing the Network Settings, but allows you (the IT Admin) to log in with your admin account and still see the settings. If assigned to a Device Group, the settings page will be hidden for everyone, including IT Admins.*
+    *Note: Assigning to a User Group blocks regular users from seeing the Network Settings, but allows you (the IT Admin) to log in with your admin account and still see the settings. If assigned to a Device Group, the settings page will be hidden for everyone, including IT Admins.*
 
 ---
 
 ## Strategy 3: OMA-URI Policy (Deprecated / Not Recommended)
-> **⚠️ Warning:** This method is currently **deprecated** and **not recommended**.
+> **Warning:** This method is currently **deprecated** and **not recommended**.
 > *   It is known to fail with **Error Code -2016281112** (Remediation Failed) on many Windows Editions (specifically Windows Pro).
 > *   It is **not compatible** with the new Windows 11 24H2 network UI, which includes a QR code feature that this policy does not hide.
 
